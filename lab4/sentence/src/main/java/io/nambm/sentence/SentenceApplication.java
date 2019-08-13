@@ -22,32 +22,3 @@ public class SentenceApplication {
 	}
 
 }
-
-@RestController
-class Controller {
-	private final
-	DiscoveryClient client;
-
-	public Controller(DiscoveryClient client) {
-		this.client = client;
-	}
-
-	private String getWord(String service) {
-		List<ServiceInstance> list = client.getInstances(service);
-		if (!CollectionUtils.isEmpty(list)) {
-			URI uri = list.get(0).getUri();
-			if (uri != null) {
-				return (new RestTemplate()).getForObject(uri, String.class);
-			}
-		}
-
-		return null;
-	}
-
-	@GetMapping("/sentence")
-	public String getSentence() {
-		return getWord("SUBJECT") + " "
-				+ getWord("VERB") + " "
-				+ getWord("NOUN") + ".";
-	}
-}
