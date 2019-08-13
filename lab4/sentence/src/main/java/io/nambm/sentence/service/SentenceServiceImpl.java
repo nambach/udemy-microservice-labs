@@ -3,7 +3,7 @@ package io.nambm.sentence.service;
 import io.nambm.sentence.repository.WordRepository;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class SentenceServiceImpl implements SentenceService {
 
     final WordRepository subjectRepo;
