@@ -1,4 +1,4 @@
-package io.nambm.sentence.domain;
+package io.nambm.common.domain;
 
 public class Word {
     private String content;
