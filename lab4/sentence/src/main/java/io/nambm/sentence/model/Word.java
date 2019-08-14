@@ -1,4 +1,4 @@
-package io.nambm.common.domain;
+package io.nambm.sentence.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
