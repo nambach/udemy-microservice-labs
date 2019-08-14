@@ -13,10 +13,10 @@ public class WordController {
     private String words;
 
     @GetMapping("/")
-    public Word getWord() {
+    public String getWord() {
         String[] arr = words.split(",");
         Random random = new Random(System.currentTimeMillis());
         String content = arr[random.nextInt(arr.length)];
-        return new Word(content);
+        return content;
     }
 }

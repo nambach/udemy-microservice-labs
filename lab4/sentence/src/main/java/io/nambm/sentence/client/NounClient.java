@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface NounClient {
 
     @GetMapping("/")
-    Word getWord();
+    String getWord();
 }
