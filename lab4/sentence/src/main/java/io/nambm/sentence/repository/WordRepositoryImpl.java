@@ -1,6 +1,6 @@
 package io.nambm.sentence.repository;
 
-import io.nambm.sentence.model.Word;
+import io.nambm.common.domain.Word;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;

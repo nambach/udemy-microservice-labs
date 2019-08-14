@@ -1,6 +1,6 @@
 package io.nambm.sentence.repository;
 
-import io.nambm.sentence.model.Word;
+import io.nambm.common.domain.Word;
 
 public interface WordRepository {
     static final String SUBJECT = "SUBJECT";

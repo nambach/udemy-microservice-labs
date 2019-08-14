@@ -1,6 +1,6 @@
 package io.nambm.word.controller;
 
-import io.nambm.word.model.Word;
+import io.nambm.common.domain.Word;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

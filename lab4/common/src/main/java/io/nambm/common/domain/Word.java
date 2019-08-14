@@ -6,6 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 public class Word {
     private String content;
 
+    public Word() {
+    }
+
     public Word(String content) {
         this.content = content;
     }
