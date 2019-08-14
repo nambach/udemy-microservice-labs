@@ -23,16 +23,26 @@ public class WordClientImpl implements WordClient {
     }
 
     @Override
+    @HystrixCommand(fallbackMethod = "getDefaultVerb")
     public String getVerb() {
         return verbClient.getWord();
     }
 
     @Override
+    @HystrixCommand(fallbackMethod = "getDefaultNoun")
     public String getNoun() {
         return nounClient.getWord();
     }
 
     public String getDefaultSubject() {
-        return "Default Subject";
+        return "Someone";
+    }
+
+    public String getDefaultVerb() {
+        return "doing";
+    }
+
+    public String getDefaultNoun() {
+        return "something";
     }
 }
