@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.nambm</groupId>
-	<artifactId>gateway</artifactId>
+	<artifactId>gateway-spring-cloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gateway</name>
+	<name>gateway-spring-cloud</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -49,7 +49,7 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
 
 		<dependency>

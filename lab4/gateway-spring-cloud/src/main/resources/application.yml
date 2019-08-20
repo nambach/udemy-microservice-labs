@@ -1,0 +1,12 @@
+---
+# Allow thymeleaf template changes to reload:
+spring.thymeleaf.cache: false
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+          route-id-prefix: /services
